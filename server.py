@@ -2,16 +2,16 @@ from flask import Flask, render_template, request, redirect, url_for
 
 
 COLORS = [
-    "#E4F9F5",
-    "#30E3CA",
-    "#11999E",
-    "#40514E"
+    "#EFFFFB",
+    "#50D890",
+    "#4F98CA",
+    "#272727"
 ]
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title='Jonathan Keller')
+    return render_template('index.html', title='Jonathan Keller', content=COLORS)
 
 
 @app.route('/portfolio')
@@ -35,4 +35,4 @@ def contact():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=8000, debug=True)

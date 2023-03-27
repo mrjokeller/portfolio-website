@@ -4,7 +4,7 @@
 
 body {
     text-align: center;
-    background-color: #E4F9F5;
+    background-color:#EFFFFB;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -32,15 +32,13 @@ a:any-link {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #000;
-    color: #fff;
     text-align: center;
     line-height: 100px;
     object-fit: cover;
 }
 
 .nav-link {
-    color: #40514E;
+    color: #272727;
     font-size: medium;
     font-weight: 300;
     position: relative;
@@ -49,19 +47,19 @@ a:any-link {
     border-radius: 8px;
     display: inline-block;
     margin: auto 0 auto 0;
-    color: #000;
     text-decoration: none;
     transition: 200ms ease-in-out;
 }
 
 .nav-link:hover {
-    color: #E4F9F5;
+    color: #EFFFFB;
     background-color: #40514E;
 }
 
 .container {
-    color: #E4F9F5;
+    color: #EFFFFB;
     background-color: #40514E;
+    box-shadow: #272727 1px 1px 5px;
     display: block;
     position: relative;
     top: 130px;
@@ -74,8 +72,8 @@ a:any-link {
 }
 
 .container:hover {
-    color: #40514E;
-    background-color: #30E3CA;
+    color: #272727;
+    background-color: #50D890;
 }
 
 .content-img{
