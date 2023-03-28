@@ -6,19 +6,50 @@
 <html>
     {% include 'header.html' %}
     <body>
-        {% include 'nav.html' %}
-        <script src="" async defer></script>
+        <!-- {% include 'nav.html' %} -->
         <main>
-            {% for i in range(content|length) %}
-            <div class="container">
-            <a href={{ url_for('content') }}>
-                <h1 class="content">Portfolio Website</h1>
-                <p class="content">My name is <strong>Jonathan Keller</strong> and I am a web developer. I have been working in the industry for 5 years and have worked on many projects. I have a passion for web development and I am always looking to learn new things. I am currently working on a project that will be released soon. I am also working on a new website for my company. I am always looking for new opportunities so please feel free to contact me.</p>
-                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2020&q=80" alt="pic of laptop" class="content-img">
-            </a>
+            <div class="wrapper">
+                <div class="container" style="top: 0; left: 0;">
+                    <a href="{{ url_for('index') }}">
+                        <img class="box-img" src="https://images.unsplash.com/photo-1668901382969-8c73e450a1f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="">
+                    </a>
+                    <div class="overlay">
+                        <a href="{{ url_for('index') }}">
+                            <h1 class="text">Tic Tac Toe</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="container" style="top: 0; left: 350px;">
+                    <a href="{{ url_for('index') }}">
+                        <img class="box-img" src="https://images.unsplash.com/photo-1654521957182-f0277b65005a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2458&q=80" alt="">
+                    </a>
+                    <div class="overlay">
+                        <a href="{{ url_for('index') }}">
+                            <h1 class="text">Image Watermarking</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="container" style="top: 350px; left: 0;">
+                    <a href="{{ url_for('index') }}">
+                        <img class="box-img" src="https://images.unsplash.com/photo-1661922027938-7c81dd767731?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="">
+                    </a>
+                    <div class="overlay">
+                        <a href="{{ url_for('index') }}">
+                            <h1 class="text">PDF to Audio</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="container" style="top: 350px; left: 350px;">
+                    <a href="{{ url_for('index') }}">
+                        <img class="box-img" src="https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="">
+                    </a>
+                    <div class="overlay">
+                        <a href="{{ url_for('index') }}">
+                            <h1 class="text">Custom API Website</h1>
+                        </a>
+                    </div>
+                </div>
             </div>
-            {% endfor %}
         </main>
-        
     </body>
 </html>
